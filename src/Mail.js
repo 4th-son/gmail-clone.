@@ -58,11 +58,16 @@ function Mail() {
             <ExitToApp />
           </IconButton>
         </div>
-        <div className="mail__body">
-          <div className="mail__bodyHeader">
-            <h2>Subject</h2>
-            
-          </div>
+      </div>
+      <div className="mail__body">
+        <div className="mail__bodyHeader">
+          <h2>Subject</h2>
+          <LabelImportant className="mail__important" />
+          <p>Title</p>
+          <p className="mail__time">10pm</p>
+        </div>
+        <div className="mail__message">
+          <p> your learning how to scam people</p>
         </div>
       </div>
     </div>

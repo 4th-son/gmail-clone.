@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar";
 import { Routes, Route } from "react-router-dom";
 import Mail from "./Mail";
 import EmailList from "./EmailList";
+import SendMail from "./SendMail";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Mail" element={<Mail />} />
           <Route />
         </Routes>
+        <SendMail />
       </div>
     </div>
   );
