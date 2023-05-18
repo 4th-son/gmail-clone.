@@ -2,8 +2,14 @@ import React from "react";
 import "./SendMail.css";
 import { Close } from "@mui/icons-material";
 import { Button } from "@mui/material";
+import { useForm } from "react-hook-form";
 
 function SendMail() {
+  // const { register, handleSubmit } = useForm();
+  // const onSubmit = () => {
+  // console.log(data);
+  // };
+
   return (
     <div className="sendMail">
       <div className="sendMail__header">
@@ -11,12 +17,24 @@ function SendMail() {
         <Close className="close__icon" />
       </div>
       <form>
-        <input placeholder="To" type="text" />
-        <input placeholder="Subject" type="text" />
         <input
+          name="To"
+          placeholder="To"
+          type="text"
+          // ref={register({ required: true })}
+        />
+        <input
+          name="subject"
+          placeholder="Subject"
+          type="text"
+          // ref={register({ required: true })}
+        />
+        <input
+          name="message"
           placeholder="Message..."
           type="text"
           className="sendMail__message"
+          // ref={register({ required: true })}
         />
         <div className="sendmail__options">
           <Button
