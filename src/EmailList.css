@@ -19,3 +19,6 @@
   border-bottom: 1px solid whitesmoke;
   z-index: 999;
 }
+.emailLists__lists {
+  padding-bottom: 20px;
+}

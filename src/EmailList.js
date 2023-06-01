@@ -15,6 +15,7 @@ import RedoIcon from "@mui/icons-material/Redo";
 import Section from "./Section";
 import InboxIcon from "@mui/icons-material/Inbox";
 import EmailRow from "./EmailRow";
+
 function EmailList() {
   return (
     <div className="emailList">
@@ -53,6 +54,66 @@ function EmailList() {
         <Section Icon={LocalOffer} title="Promotions" color="green" />
       </div>
       <div className="emailLists__lists">
+        <EmailRow
+          title="Twitch"
+          subject="hey fellows hackers"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="hey fellows hackers"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="hey fellows hackers"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="hey fellows hackers"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="hey fellows hackers"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="hey fellows hackers"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="hey fellows hackers"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="hey fellows hackers"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="hey fellows hackers"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="hey fellows hackers"
+          description="this is a test"
+          time="10pm"
+        />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"

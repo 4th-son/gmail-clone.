@@ -2,40 +2,42 @@ import React from "react";
 import "./SendMail.css";
 import { Close } from "@mui/icons-material";
 import { Button } from "@mui/material";
-import { useForm } from "react-hook-form";
+import { useDispatch } from "react-redux";
+import { closeSendMessage } from "./features/mailSlice";
+// import { useForm } from "react-hook-form";
+// import { db } from "./firebase";
 
 function SendMail() {
-  // const { register, handleSubmit } = useForm();
-  // const onSubmit = () => {
-  // console.log(data);
+  // // const [formData, handleSubmit] = useState({
+  // //   to: "",
+  // //   subject: "",
+  // //   message: "",
+  // });
+  const dispatch = useDispatch();
+  // const onSubmit = (event) => {
+  //   event.preventDefault();
+  //   console.log(formData);
   // };
 
   return (
     <div className="sendMail">
       <div className="sendMail__header">
         <h3>New Message</h3>
-        <Close className="close__icon" />
+        <Close
+          className="close__icon"
+          onClick={() => dispatch(closeSendMessage())}
+        />
       </div>
       <form>
-        <input
-          name="To"
-          placeholder="To"
-          type="text"
-          // ref={register({ required: true })}
-        />
-        <input
-          name="subject"
-          placeholder="Subject"
-          type="text"
-          // ref={register({ required: true })}
-        />
+        <input name="to" placeholder="To" type="email" />
+        <input name="subject" placeholder="Subject" type="text" />
         <input
           name="message"
           placeholder="Message..."
           type="text"
           className="sendMail__message"
-          // ref={register({ required: true })}
         />
+
         <div className="sendmail__options">
           <Button
             className="sendMail__send"

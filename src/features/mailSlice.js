@@ -21,11 +21,11 @@ export const mailSlice = createSlice({
     sendMessageIsOpen: false,
   },
   reducers: {
-    OpenSendMessage: (state) => {
+    openSendMessage: (state) => {
       state.sendMessageIsOpen = true;
     },
-    CloseSendMessage: (state) => {
-      state.sendMessage = true;
+    closeSendMessage: (state) => {
+      state.sendMessageIsOpen = false;
     },
   },
   // The `extraReducers` field lets the slice handle actions defined elsewhere,
@@ -42,7 +42,7 @@ export const mailSlice = createSlice({
   },
 });
 
-export const { OpenSendMessage, CloseSendMessage } = mailSlice.actions;
+export const { openSendMessage, closeSendMessage } = mailSlice.actions;
 
 export const selectSendMessageIsOpen = (state) => state.mail.sendMessageIsOpen;
 
