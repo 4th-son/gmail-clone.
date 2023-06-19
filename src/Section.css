@@ -1,4 +1,4 @@
-.section {
+/* .section {
   display: flex;
   align-items: center;
   border-bottom-width: 2px;
@@ -7,16 +7,16 @@
   cursor: pointer;
   color: grey;
   border-width: 0 !important;
-}
-.section--selected {
+} */
+/* .section--selected {
   background-color: whitesmoke;
   border-width: 3px !important;
-}
-.section:hover {
+} */
+/* .section:hover {
   background-color: whitesmoke;
   border-width: 3px !important;
 }
 .section > h4 {
   font-size: 15px;
   margin-left: 15px;
-}
+} */

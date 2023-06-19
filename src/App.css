@@ -1,7 +1,7 @@
 .app {
-  height: 100vh;
+  height: 80vh;
 }
 .app__body {
   display: flex;
-  height: 100vh;
+  height: 80vh;
 }

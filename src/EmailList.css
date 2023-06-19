@@ -1,8 +1,8 @@
-.emailList {
+/* .emailList {
   flex: 1;
   overflow: scroll;
-}
-.emailList__settings {
+} */
+/* .emailList__settings {
   display: flex;
   top: 0;
   border-bottom: 1px solid whitesmoke;
@@ -11,14 +11,14 @@
   background-color: white;
   z-index: 999;
   padding-right: 10px;
-}
-.emailList__sections {
+} */
+/* .emailList__sections {
   position: sticky;
   top: 0;
   display: flex;
   border-bottom: 1px solid whitesmoke;
   z-index: 999;
-}
-.emailLists__lists {
+} */
+/* .emailLists__lists {
   padding-bottom: 20px;
-}
+} */

@@ -1,5 +1,4 @@
 import React from "react";
-import "./EmailList.css";
 import {
   ArrowDropDown,
   ChevronLeft,
@@ -18,8 +17,8 @@ import EmailRow from "./EmailRow";
 
 function EmailList() {
   return (
-    <div className="emailList">
-      <div className="emailList__settings">
+    <div className="flex-1 overflow-auto">
+      <div className="flex sticky top-0 border-b border-gray-300 justify-between bg-white z-10 pr-4">
         <div className="emailList__settingsLeft">
           <Checkbox />
           <IconButton>
@@ -48,82 +47,82 @@ function EmailList() {
           <IconButton></IconButton>
         </div>
       </div>
-      <div className="emailList__sections">
+      <div className="flex relative top-0 border-b border-gray-300 z-0 ">
         <Section Icon={InboxIcon} title="Primary" color="red" selected />
         <Section Icon={PeopleIcon} title="Social" color="#1A73EA" />
         <Section Icon={LocalOffer} title="Promotions" color="green" />
       </div>
-      <div className="emailLists__lists">
+      <div className="pb-6 ">
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css "
           time="10pm"
         />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css"
           time="10pm"
         />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css"
           time="10pm"
         />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css"
           time="10pm"
         />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css"
           time="10pm"
         />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css"
           time="10pm"
         />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css"
           time="10pm"
         />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css"
           time="10pm"
         />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css"
           time="10pm"
         />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css"
           time="10pm"
         />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css"
           time="10pm"
         />
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
-          description="this is a test"
+          description="this is a text testing the display of the email screen while redecorating with tailwind css"
           time="10pm"
         />
       </div>
