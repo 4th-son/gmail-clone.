@@ -1,5 +1,5 @@
 import React from "react";
-import "./Sidebar.css";
+
 import { Button, IconButton } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import InboxIcon from "@mui/icons-material/Inbox";
@@ -17,7 +17,7 @@ function Sidebar() {
   const dispatch = useDispatch();
 
   return (
-    <div className="sidebar flex-none  w-72 pr-5">
+    <div className="sidebar hidden md:block  w-72 pr-5">
       <Button
         style={{ backgroundColor: "whitesmoke" }}
         startIcon={<AddIcon fontSize="large" />}

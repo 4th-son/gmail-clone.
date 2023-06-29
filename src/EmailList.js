@@ -18,7 +18,7 @@ import EmailRow from "./EmailRow";
 function EmailList() {
   return (
     <div className="flex-1 overflow-auto">
-      <div className="flex sticky top-0 border-b border-gray-300 justify-between bg-white z-10 pr-4">
+      <div className="hidden md:flex sticky top-0 border-b border-gray-300 justify-between bg-white z-10 pr-4">
         <div className="emailList__settingsLeft">
           <Checkbox />
           <IconButton>
@@ -52,7 +52,7 @@ function EmailList() {
         <Section Icon={PeopleIcon} title="Social" color="#1A73EA" />
         <Section Icon={LocalOffer} title="Promotions" color="green" />
       </div>
-      <div className="pb-6 ">
+      <div className=" pb-6">
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"

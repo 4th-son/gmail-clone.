@@ -20,7 +20,7 @@ function SendMail() {
   const dispatch = useDispatch();
 
   return (
-    <div className="sendMail absolute bottom-0 right-14 bg-zinc-300 h-4/5 w-3/5 max-w-lg rounded-tr-lg rounded-tl-lg flex flex-col border border-gray-400 shadow-xl ">
+    <div className="sendMail fixed bottom-0 right-14 bg-zinc-300  w-3/5 max-w-lg rounded-tr-lg rounded-tl-lg flex flex-col border border-gray-400 shadow-xl ">
       <div className="sendMail__header flex justify-between items-center p-3 ">
         <h3 className=" text-zinc-600 font-semibold">New Message</h3>
         <div>
@@ -35,7 +35,7 @@ function SendMail() {
           </IconButton>
         </div>
       </div>
-      <form className=" flex flex-1 flex-col">
+      <form className=" flex flex-col">
         <input
           name="Receipient"
           placeholder="Receipient"
@@ -48,8 +48,8 @@ function SendMail() {
           type="text"
           className=" h-7 p-2  border-b border-gray-300 outline-none"
         />
-        <input
-          className="sendMail__message h-7 p-4 border-none  outline-none flex-auto "
+        <textarea
+          className="sendMail__message h-72 p-4 border-none  outline-none  "
           name="message"
           placeholder="Message..."
           type="text"
