@@ -5,7 +5,9 @@ import {
   ChevronRight,
   KeyboardHide,
   LocalOffer,
+  ModeEditOutline,
   MoreVert,
+  SearchOutlined,
   Settings,
 } from "@mui/icons-material";
 import PeopleIcon from "@mui/icons-material/People";
@@ -14,6 +16,8 @@ import RedoIcon from "@mui/icons-material/Redo";
 import Section from "./Section";
 import InboxIcon from "@mui/icons-material/Inbox";
 import EmailRow from "./EmailRow";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import RefreshIcon from "@mui/icons-material/Refresh";
 
 function EmailList() {
   return (
@@ -44,10 +48,29 @@ function EmailList() {
           <IconButton>
             <Settings />
           </IconButton>
-          <IconButton></IconButton>
         </div>
       </div>
-      <div className="flex relative top-0 border-b border-gray-300 z-0 ">
+      <div className="flex h-8 md:hidden ">
+        <IconButton>
+          <MenuOutlinedIcon />
+        </IconButton>
+        <IconButton>
+          <RefreshIcon />
+        </IconButton>
+        <Section Icon={InboxIcon} title="Primary" color="red" selected />
+        <IconButton>
+          <ModeEditOutline className=" bg-red-700 rounded-sm" />
+        </IconButton>
+      </div>
+      <div className="flex items-center pl-2 md:hidden">
+        <SearchOutlined className=" text-zinc-500" />
+        <input
+          className="border-none p-2 outline-none text-base bg-transparent"
+          placeholder="Search mail"
+          type="text"
+        />
+      </div>
+      <div className=" hidden md:flex relative top-0 border-b border-gray-300 z-0 ">
         <Section Icon={InboxIcon} title="Primary" color="red" selected />
         <Section Icon={PeopleIcon} title="Social" color="#1A73EA" />
         <Section Icon={LocalOffer} title="Promotions" color="green" />
