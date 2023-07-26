@@ -5,11 +5,12 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
 import AppsOutlinedIcon from "@mui/icons-material/AppsOutlined";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-function Header() {
+
+function Header({ handleOpenSidebar }) {
   return (
     <div className="header hidden md:flex justify-between border-b border-gray-300 sticky  ">
       <div className="header__left flex items-center">
-        <IconButton>
+        <IconButton onClick={handleOpenSidebar}>
           <MenuOutlinedIcon />
         </IconButton>
         <img

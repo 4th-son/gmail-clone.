@@ -75,7 +75,7 @@ function EmailList() {
         <Section Icon={PeopleIcon} title="Social" color="#1A73EA" />
         <Section Icon={LocalOffer} title="Promotions" color="green" />
       </div>
-      <div className=" pb-6">
+      <div className=" pb-6 ">
         <EmailRow
           title="Twitch"
           subject="hey fellows hackers"
